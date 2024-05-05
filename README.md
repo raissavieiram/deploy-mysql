@@ -6,7 +6,9 @@ Imaginemos um cenário em que você é um consultor de banco de dados encarregad
 
 ## Modelo Lógico
 
-O modelo lógico criado representa as entidades e relacionamentos necessários para o sistema proposto. Ele apresenta todas as tabelas e seus atributos, bem como as chaves primárias e estrangeiras de cada tabela. As relações entre as entidades são representadas por linhas que incluem as chaves estrangeiras correspondentes e a cardinalidade entre as tabelas. 
+O modelo lógico criado representa as entidades e relacionamentos necessários para o sistema proposto. Ele apresenta todas as tabelas e seus atributos, bem como as chaves primárias e estrangeiras de cada tabela. As relações entre as entidades são representadas por linhas que incluem as chaves estrangeiras correspondentes e a cardinalidade entre as tabelas.
+
+Para visualizar melhor o modelo lógico, é possível clicar na imagem abaixo para ampliá-la:
 
 <img src="imagens/modelo db.png" alt="Modelo Lógico"/>
 
@@ -38,7 +40,7 @@ O modelo lógico criado representa as entidades e relacionamentos necessários p
 
 Para a criação do banco de dados foi utilizado o serviço Amazon RDS (Relational Database Service) e o banco de dados MySQL como proposto pelo enunciado.
 
-<img src="imagens/banco AWS.png" alt="Amazon RDS"/>
+<img src="imagens/banco aws.png" alt="Amazon RDS"/>
 
 Após a criação foram configuradas as regras de segurança para permitir o acesso ao banco de dados a partir de qualquer lugar. Essa configuração foi feita para facilitar a conexão com o banco de dados a partir de qualquer local, sem restrições de IP.
 
