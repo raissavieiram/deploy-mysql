@@ -12,11 +12,11 @@ Para visualizar melhor o modelo lógico, é possível clicar na imagem abaixo pa
 
 <img src="imagens/modelo db.png" alt="Modelo Lógico"/>
 
-- TB_TIPO_VEICULO: Armazena diferentes categorias de veículos utilizados no sistema, como ambulâncias ou caminhões.
+- TB_TIPO_VEICULO: Armazena diferentes categorias de veículos utilizados no sistema, como ambulâncias ou caminhões. Essa tabela representa uma relação de um para muitos com a tabela TB_VEICULO.
 
 - TB_VEICULO: Contém informações sobre os veículos individuais, vinculando cada um a um tipo específico de veículo descrito na tabela TB_TIPO_VEICULO.
 
-- TB_TIPO_PRODUTO_MEDICO: Categoriza os tipos de produtos médicos, como medicamentos ou equipamentos, que são gerenciados pelo sistema.
+- TB_TIPO_PRODUTO_MEDICO: Categoriza os tipos de produtos médicos, como medicamentos ou equipamentos, que são gerenciados pelo sistema. Essa tabela representa uma relação de um para muitos com a tabela TB_PRODUTO_MEDICO.
 
 - TB_PRODUTO_MEDICO: Detalha os produtos médicos individuais, relacionando-os a seus respectivos tipos da tabela TB_TIPO_PRODUTO_MEDICO.
 
@@ -26,13 +26,13 @@ Para visualizar melhor o modelo lógico, é possível clicar na imagem abaixo pa
 
 - TB_TRANSPORTE: Registra os detalhes de cada transporte realizado, seja de pacientes ou produtos médicos, incluindo datas e locais de origem e destino.
 
-- TB_PACIENTE_TRANSPORTE: Uma tabela de junção que relaciona pacientes a transportes específicos, mostrando que um paciente foi transportado em um determinado transporte registrado na tabela TB_TRANSPORTE.
+- TB_PACIENTE_TRANSPORTE: Uma tabela de junção que relaciona pacientes a transportes específicos, mostrando que um paciente foi transportado em um determinado transporte registrado na tabela TB_TRANSPORTE. Essa tabela representa a relação muitos para muitos entre pacientes e transportes.
 
-- TB_PRODUTO_MEDICO_TRANSPORTE: Relaciona produtos médicos a transportes específicos, relacionando um produto médico a um transporte registrado na tabela TB_TRANSPORTE.
+- TB_PRODUTO_MEDICO_TRANSPORTE: Relaciona produtos médicos a transportes específicos, relacionando um produto médico a um transporte registrado na tabela TB_TRANSPORTE. Essa tabela também representa uma relação muitos para muitos entre produtos médicos e transportes.
 
 - TB_VISITA: Registra visitas de pacientes às unidades de saúde, especificando a data, o paciente e a unidade de saúde envolvida.
 
-- TB_VISITA_PRODUTO_MEDICO: Associa produtos médicos a visitas específicas de pacientes, registrando quais produtos foram utilizados durante uma visita médica registrada na tabela TB_VISITA.
+- TB_VISITA_PRODUTO_MEDICO: Associa produtos médicos a visitas específicas de pacientes, registrando quais produtos foram utilizados durante uma visita médica registrada na tabela TB_VISITA. Essa tabela representa uma relação muitos para muitos entre produtos médicos e visitas de pacientes.
 
 - TB_ESTOQUE_PRODUTO_MEDICO: Gerencia o estoque de produtos médicos, monitorando as quantidades disponíveis e as datas de entrada e saída dos estoques.
 
